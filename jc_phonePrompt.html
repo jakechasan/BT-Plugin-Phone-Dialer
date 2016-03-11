@@ -1,0 +1,57 @@
+<!-- ##################################################### -->                   
+<!-- ############### Alert Title and Message property ################### -->
+
+<div class='cpExpandoBox colorLightBg' id="section_promptSettings">
+    <a href='#' onClick="fnTogglePropertyBox('box_promptSettings');return false;"><img src='../../images/arr_right.gif' alt='arrow' />Advanced Prompt Settings</a>
+    <div id="box_promptSettings" style="display:box;">
+
+            <br /><b>Prompt Type: </b>Simple has no options and returns to the app after the call. Advanced has many options and does not return to the app after the call.<br/>
+                            <select name="json_callType" id="json_callType" style="width:225px;">
+                                <option value="">Select</option>
+                                <option value="simple">Simple</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+
+<div class='cpExpandoBox colorLightBg' id="section_promptInfo">
+    <a href='#' onClick="fnTogglePropertyBox('box_promptInfo');return false;"><img src='../../images/arr_right.gif' alt='arrow' />Advanced Prompt Settings</a>
+    <div id="box_promptInfo" style="display:none;">
+        
+        <div style='padding-top:10px;'>
+
+            <b>Prompt Style:</b><br/>
+                            <select name="json_alertOrActionSheet" id="json_alertOrActionSheet" style="width:225px;">
+                                <option value="">Select</option>
+                                <option value="alert">Alert</option>
+                                <option value="actionSheet">Action Sheet</option>
+                            </select>
+<br><br>            
+
+          <b>Title for Prompt:</b><br/>
+            <input type="text" name="json_promptTitle" id="json_promptTitle" value="">
+          <br><br>
+          <b>Message for Prompt:</b> (AlertView Only)<br>
+          <input type="text" name="json_promptMessage" id="json_promptMessage" value="">
+		<br><br>
+            <b>Call Button Title</b>:<br/>
+            <input type="text" name="json_callButtonTitle" id="json_callButtonTitle" value="">
+          <br><br>
+            <b>Cancel Button Title</b>:<br/>
+            <input type="text" name="json_cancelButtonTitle" id="json_cancelButtonTitle" value="">
+          <br><br>
+        </div>
+        
+</div>
+</div>
+
+<br />
+        <div class='boxButton'>
+            <input type='button' title="save" value="save" align='absmiddle' class="buttonSubmit" onClick="saveAdvancedProperty('saveResult_promptSettings');return false;">
+            <div id="saveResult_promptSettings" class="submit_working">&nbsp;</div>
+        </div>
+            
+    </div> 
+    
+</div>
+
+<!-- ############### end Alert Title and Message property ############### -->
+<!-- ##################################################### -->
